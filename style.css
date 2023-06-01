@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*espaçamento das paginas*/
+  
+/* Pagina 1 */
+#page1 {
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#button {
+    background-color: #1b9a96;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 20px; /* Aviso para tirar depois */
+
+    transition-duration: .2s;
+}
+
+#button:hover {
+    background-color: #157b78;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.content img, p, a{
+    margin: 58px 0 58px;
+}
+
+/* Pagina 2 */
+#page2 {
+    background-color: #1b9a96;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+
+#table {
+    display: grid;
+    /*para desktop: minmax 300px, para mobile: minmax 400px*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 150px;
+    max-width: 800px;
+}
+
+#button2 {
+    background-color: #222222;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+
+    transition-duration: .2s;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img{
+    width: 8vw;
+}
+
+#button2:hover {
+    background-color: rgb(24, 24, 24);
+    color: rgba(255, 255, 255, 0.793);
+}
+
+/* Pagina 3 */
+#page3{
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.panel {
+    background-color: #1b9a96;
+    color: black;
+    border-radius: 30px;
+    width: 90vw;
+    padding: 15px;
+    margin-bottom: 140px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.trapezoid-green {
+    width: 100%;
+    height: 5vw; /* Altura do trapézio */
+    background-color: #1b9a96;
+    clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
+    margin-bottom: -1px; /* Remove a linha de 1px abaixo do trapézio */
+
+    /*clip-path: polygon(15% 0, 85% 0, 100% 100%, 0 100%);
+    o exemplo acima, ajustamos as coordenadas no clip-path para criar um trapézio com lados mais verticais. Agora, as coordenadas (15% 0) correspondem ao canto superior esquerdo, (85% 0) ao canto superior direito, (100% 100%) à parte inferior direita e (0 100%) à parte inferior esquerda.*/
+  }
+
+     
+/* Pagina 4 */
+#page4 {
+    background-color: #1b9a96;
+}
+
+.trapezoid-gray {
+    width: 100%;
+    height: 5vw; /* Altura do trapézio */
+    background-color: #222222;
+    clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
+    margin-bottom: -1px;
+}
+
+#page4 img{
+    border-radius: 100%;
+}
+
+/* Pagina 5 */
+#page5 {
+    background-color: #1b9a96;
+}
