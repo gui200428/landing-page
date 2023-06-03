@@ -4,6 +4,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -21,11 +25,13 @@ html, body {
 #button {
     background-color: #1b9a96;
     text-decoration: none;
-    color: black;
+    color: #000;
     padding: 20px;
     border-radius: 50px;
-    margin-bottom: 20px; /* Aviso para tirar depois */
+    font-weight: bold;
+    font-size: 20px;
 
+    transition: ease-in-out;
     transition-duration: .2s;
 }
 
@@ -43,8 +49,19 @@ html, body {
     padding-top: 20px;
 }
 
-.content img, p, a{
-    margin: 58px 0 58px;
+
+.cont {
+    margin: 55px 0 55px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#grean-triangle{
+    background-color: #1b9a96;
+    width: 100%;
+    height: 6vw;
+    clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+    
 }
 
 /* Pagina 2 */
@@ -52,15 +69,23 @@ html, body {
     background-color: #1b9a96;
 }
 
-#container {
+#black-triangle{
+    background-color: #111111;
+    width: 100%;
+    height: 6vw;
+    clip-path: polygon(50% 100%, 100% 0, 0 0);
+
+}
+
+#table {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 200px 100px 100px 100px;
 }
 
-#table {
+#table-content {
     display: grid;
     /*para desktop: minmax 300px, para mobile: minmax 400px*/
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -69,23 +94,28 @@ html, body {
 }
 
 #button2 {
-    background-color: #222222;
+    background-color: #111111;
     text-decoration: none;
-    color: white;
+    color: #1b9a96;
     padding: 20px;
+    margin-top: 60px;
     border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
 
-    transition-duration: .2s;
+    transition-duration: .2s opacity 0.5s ease-in-out;
 }
 
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 
-.item img{
-    width: 8vw;
+.item > img{
+    width: 200px;
 }
 
 #button2:hover {
@@ -93,11 +123,23 @@ html, body {
     color: rgba(255, 255, 255, 0.793);
 }
 
+#graybar{
+    background-color: #111111;
+    width: 100%;
+    height: 8vw;
+}
+
 /* Pagina 3 */
 #page3{
     background-image: url("./assets/background.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#greenbar{
+    background-color: #1b9a96;
+    width: 100%;
+    height: 8vw;
 }
 
 .panel {
@@ -113,8 +155,9 @@ html, body {
 
 .trapezoid-green {
     width: 100%;
-    height: 5vw; /* Altura do trapézio */
+    height: 8vw; /* Altura do trapézio */
     background-color: #1b9a96;
+    /*clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);*/
     clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
     margin-bottom: -1px; /* Remove a linha de 1px abaixo do trapézio */
 
@@ -128,49 +171,101 @@ html, body {
     background-color: #1b9a96;
 }
 
+/*temporario*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.container > img{
+    border-radius: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
+    margin: 130px 0 30px -6vw;
+}
+
 .trapezoid-gray {
     width: 100%;
-    height: 5vw; /* Altura do trapézio */
-    background-color: #222222;
+    height: 8vw; /* Altura do trapézio */
+    background-color: #111111;
     clip-path: polygon(5% 100%, 95% 100%, 100% 0, 0 0);
     margin-bottom: -1px;
     
 }
 
-#page4 img{
-    margin-top: 20vh;
-    border-radius: 100%;
-    margin-left: -12vh;
+#info{
+    background-color: #111111;
+    color: #fff;
+    width: 100%;
+    clip-path: polygon(0% 0%, 96% 0, 100% 50%, 96% 100%, 0% 100%);
+}
+
+#info-content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 40px;
 }
 
 #copy{
-    background-color: #222222;
+    background-color: #111111;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: #fff;
     padding-top: 20px;
-}
-
-#del{
-    margin-left: 10vh;
 }
 
 /* Pagina 5 */
 #page5 {
     background-color: #1b9a96;
+}
+
+#depoimentos{
+    background-color: #111111;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    padding-top: 20px;
+    font-size: 20px;
+    padding: 40px 0 40px 0;
+    margin: 80px;
+
+    clip-path: polygon(4% 0, 100% 1%, 100% 100%, 4% 100%, 0% 50%);
+
 
 }
+
 
 #page5 #YT{
 padding: 10vh;
 width: 80vh;
 height: auto;
+}
+
+/*animations*/
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.slide {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+  
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+@media (max-width: 966px) {
+    #table-content {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
 }

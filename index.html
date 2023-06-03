@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="./assets/fonts.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./assets/dl-saude.ico" type="image/x-icon">
+    <script src="script.js"></script>
     <title>Fitness</title>
 </head>
 
@@ -15,51 +16,54 @@
 
         <div id="page1">
             <div class="content">
-                <img src="./assets/logo-full.png" alt="">
-                <p>TREINAMENTO 100% PRATICO FOCADO PARA ESTUDANTES E PROFISSIONAIS DA SAÚDE</p>
-                <img src="./assets/dl-saude.png" alt="dl saúde">
-                <p>VOCÊ SERÁ TREINADO POR INSTRUTORES QUE VIVEM O APH NA PRATICA DO DIA DIA DAS URGÊNCIAS E EMERGÊNCIAS </p>
-                <a href="#" id="button">QUERO ME INSCREVER</a>
-                <dir class="clip"></dir>
+                <img class="cont fade-in" src="./assets/logo-full.png" alt="">
+                <p class="cont fade-in">TREINAMENTO 100% PRATICO FOCADO PARA ESTUDANTES E PROFISSIONAIS DA SAÚDE</p>
+                <img class="cont fade-in" src="./assets/dl-saude.png" alt="dl saúde">
+                <p class="cont fade-in">VOCÊ SERÁ TREINADO POR INSTRUTORES QUE VIVEM O APH NA PRATICA DO DIA DIA DAS URGÊNCIAS E EMERGÊNCIAS </p>
+                <a class="cont fade-in" href="#" id="button">QUERO ME INSCREVER</a>
+                <div class="fade-in" id="grean-triangle"></div>
             </div>
         </div>
 
         <div id="page2">
-            <div id="container">
-                <div id="table">
-                    <div class="item">
+            <div id="black-triangle"></div>
+            <div id="table">
+                <div id="table-content">
+                    <div class="item slide">
                         <img src="/assets/doc.png" alt="">
                         <h2>PROFISSIONAIS DA SAÚDE</h2>
                         <p>Você que quer se capacitar e gerar valor no seu currículo</p>
                     </div>
-                    <div class="item">
+                    <div class="item slide">
                         <img src="/assets/student.png" alt="">
                         <h2>ESTUDANTES</h2>
                         <p>Acabou de se formar ou ainda está no processo e se sente inseguro</p>
                     </div>
-                    <div class="item">
+                    <div class="item slide">
                         <img src="/assets/money.png" alt="">
                         <h2>INVESTIMENTO </h2>
                         <p>Para você que não pode investir muito, mas precisa de resultados rápidos</p>
                     </div>
-                    <div class="item">
+                    <div class="item slide">
                         <img src="/assets/cert.png" alt="">
                         <h2>CERTIFICAÇÃO</h2>
                         <p>Certificado por instrutores habilitados </p>
                     </div>
                 </div>
-                <a href="#" id="button2">QUERO ME INSCREVER</a>
+                <a href="#" class="slide" id="button2">QUERO ME INSCREVER</a>
             </div>
+            <div id="graybar"></div>
         </div>
         
         <div id="page3">
+            <div id="greenbar"></div>
             <div class="content">
-                <h1>Conteúdo do TREINAMENTO</h1>
-                <img id="imgSBV" src="./assets/logo.png" alt="Logo">
-                <div class="panel">
+                <h1 class="slide">Conteúdo do TREINAMENTO</h1>
+                <img class="cont slide" id="imgSBV" src="./assets/logo.png" alt="Logo">
+                <div class="panel slide">
                     <p id="text"><b>Cadeia de sobrevivência adulto e pediátrica:</b> RCP em adultos, crianças e bebês com manequins eletrônicos Feedback em tempo real 100% digital</p>
                 </div>
-                <div class="panel">
+                <div class="panel slide">
                     <p id="text"><b>+DEA OVACE e AVC</b> totalmente pratico e simulações realísticas <b>com conteúdo direcionado</b></p>
                     </div>
                 </div>
@@ -68,19 +72,30 @@
 
             </div>
         </div>
-        
+
         <div id="page4">
-            <div class="trapezoid-gray"></div>
-            <img src="./assets/enfermeiro.png" alt="">
-            <h1 id="d   `el">Enfermeiro Delmiran Mendes</h1>
-            <p>Profissional e empreendedor de 25 anos de experiência atuando em urgências e emergências pelo SAMU de Araraqura e GRAU de Ribeirão Preto</p>
+            <div class="container">
+                <div class="trapezoid-gray"></div>
+                <img class="slide" src="./assets/enfermeiro.png" alt="">
+                <div id="info">
+                    <div class="slide" id="info-content">
+                        <h1>Enfermeiro Delmiran Mendes</h1>
+                        <p>Profissional e empreendedor de 25 anos de experiência atuando em urgências e emergências pelo SAMU de Araraqura e GRAU de Ribeirão Preto</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="page5">
-            <h1>DEPOIMENTOS</h1>
-            <img id="logoPeB" src="./assets/logoPeB.png" alt="">
-            <img id="YT" src="https://www.youtube.com/img/desktop/yt_1200.png" alt="">
+            <div class="content">
+                <div id="depoimentos">
+                    <h1 class="slide">DEPOIMENTOS</h1>
+                </div>
+                <img class="slide" id="logoPeB" src="./assets/logoPeB.png" alt="">
+                <img class="slide" id="YT" src="https://www.youtube.com/img/desktop/yt_1200.png" alt="">
+            </div>
         </div>
+
         <footer>
             <div id="copy">
                 <p>&copy; DL Saúde Ocupacional - Todos os direitos reservados</p>
