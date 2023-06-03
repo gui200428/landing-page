@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -51,7 +51,7 @@ html, body {
 
 
 .cont {
-    margin: 55px 0 55px;
+    margin: 55px 20px 55px 20px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -239,11 +239,9 @@ html, body {
 
 }
 
-
-#page5 #YT{
-padding: 10vh;
-width: 80vh;
-height: auto;
+#YT{
+    width: 30vh;
+    margin: 20px 0 20px 0;
 }
 
 /*animations*/
