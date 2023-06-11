@@ -11,6 +11,7 @@ html {
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /*espaçamento das paginas*/
@@ -44,6 +45,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     color: #fff;
     padding-top: 20px;
@@ -67,6 +69,9 @@ html, body {
 /* Pagina 2 */
 #page2 {
     background-color: #1b9a96;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #black-triangle{
@@ -82,7 +87,6 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 200px 100px 100px 100px;
 }
 
 #table-content {
@@ -99,6 +103,7 @@ html, body {
     color: #1b9a96;
     padding: 20px;
     margin-top: 60px;
+    margin-bottom: 100px;
     border-radius: 50px;
     font-weight: bold;
     font-size: 20px;
@@ -112,6 +117,7 @@ html, body {
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    margin: 50px;
 }
 
 .item > img{
@@ -216,7 +222,10 @@ html, body {
     align-items: center;
     justify-content: center;
     color: #fff;
-    padding-top: 20px;
+}
+
+#copy > p{
+    margin: 30px;
 }
 
 /* Pagina 5 */
