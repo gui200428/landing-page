@@ -24,7 +24,7 @@ html, body {
 }
 
 #button {
-    background-color: #1b9a96;
+    background-color: #269c99;
     text-decoration: none;
     color: #000;
     padding: 20px;
@@ -59,7 +59,7 @@ html, body {
 }
 
 #grean-triangle{
-    background-color: #1b9a96;
+    background-color: #269c99;
     width: 100%;
     height: 6vw;
     clip-path: polygon(50% 0%, 0 100%, 100% 100%);
@@ -68,7 +68,7 @@ html, body {
 
 /* Pagina 2 */
 #page2 {
-    background-color: #1b9a96;
+    background-color: #269c99;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +100,7 @@ html, body {
 #button2 {
     background-color: #111111;
     text-decoration: none;
-    color: #1b9a96;
+    color: #269c99;
     padding: 20px;
     margin-top: 60px;
     margin-bottom: 100px;
@@ -143,13 +143,13 @@ html, body {
 }
 
 #greenbar{
-    background-color: #1b9a96;
+    background-color: #269c99;
     width: 100%;
     height: 8vw;
 }
 
 .panel {
-    background-color: #1b9a96;
+    background-color: #269c99;
     color: black;
     border-radius: 30px;
     width: 90vw;
@@ -163,7 +163,7 @@ html, body {
 .trapezoid-green {
     width: 100%;
     height: 8vw; /* Altura do trapézio */
-    background-color: #1b9a96;
+    background-color: #269c99;
     /*clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);*/
     clip-path: polygon(5% 0, 95% 0, 100% 100%, 0 100%);
     margin-bottom: -1px; /* Remove a linha de 1px abaixo do trapézio */
@@ -175,7 +175,7 @@ html, body {
      
 /* Pagina 4 */
 #page4 {
-    background-color: #1b9a96;
+    background-color: #269c99;
 }
 
 /*temporario*/
@@ -231,7 +231,7 @@ html, body {
 
 /* Pagina 5 */
 #page5 {
-    background-color: #1b9a96;
+    background-color: #269c99;
 }
 
 #depoimentos{
